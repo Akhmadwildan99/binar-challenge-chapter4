@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300;1,400;1,600&display=swap');
+ 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: open sans;
+    background: #9C835F;
+}
+
+/* Haeder */
+
+.header ul{
+    display: flex;
+    list-style-type: none;
+   
+}
+
+.header ul a {
+    text-decoration: none;
+}
+
+.header ul a li{
+    margin: 30px 0 0 27px;
+}
+
+.header ul a li.navigasi{
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #724C21;
+    cursor: pointer;
+
+}
+
+.header ul a li.logo img {
+    height: 72px;
+    width: 72px;
+    border-radius: 30px;
+}
+
+.header ul a li.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #F9B23D;
+}
+
+/* Player */
+
+.title-player {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.player li {
+    list-style-type: none;
+    display: flex;
+}
+
+.img-player {
+    margin: 50px auto;
+   
+}
+
+.img-player.batu {
+    width: 128px;
+    height: 92px;
+}
+
+.img-player.kertas {
+    width: 115px;
+    height: 150px;
+}
+
+.img-player.gunting {
+    width: 134px;
+    height: 160px;
+}
+
+/* VS & Result */
+
+.vs {
+    margin-top: 327px;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 196px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #BD0000;
+}
+
+.refresh {
+    width: 77px;
+    height: 71px;
+    margin: 234px 0 100px 140px;
+}
+
+/* Com */
+
+.title-com {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.com li {
+    list-style-type: none;
+    display: flex;
+}
+
+.img-com {
+    margin: 50px auto;
+   
+}
+
+.img-com.batu {
+    width: 128px;
+    height: 92px;
+}
+
+.img-com.kertas {
+    width: 115px;
+    height: 150px;
+}
+
+.img-com.gunting {
+    width: 134px;
+    height: 160px;
+}

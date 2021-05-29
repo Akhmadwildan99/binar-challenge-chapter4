@@ -103,9 +103,14 @@
 }
 
 .refresh {
+    margin: 234px 0 70px 130px;
+}
+
+.refresh img {
     width: 77px;
     height: 71px;
-    margin: 234px 0 100px 140px;
+    /* margin: 234px 0 70px 40px; */
+    
 }
 
 /* Com */

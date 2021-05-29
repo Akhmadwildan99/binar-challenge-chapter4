@@ -5,6 +5,7 @@
     margin: 0;
     font-family: open sans;
     background: #9C835F;
+    
 }
 
 /* Haeder */
@@ -73,6 +74,7 @@
 }
 
 .img-player.batu {
+    
     width: 128px;
     height: 92px;
 }
@@ -142,4 +144,13 @@
 .img-com.gunting {
     width: 134px;
     height: 160px;
+}
+
+/* class mainppulation */
+
+.active-player {
+    width: 223px;
+    height: 300px;
+    background: #C4C4C4;
+    border-radius: 30px;
 }

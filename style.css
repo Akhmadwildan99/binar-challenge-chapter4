@@ -102,7 +102,7 @@
 }
 
 .result {
-    /* margin-top: 327px; */
+    margin-top: 327px;
     width: 271.11px;
     height: 166.93px;
     background: #4C9654;
@@ -113,21 +113,18 @@
     font-size: 38px;
     line-height: 52px;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .refresh {
-    margin: 250px 0 70px 130px;
-}
-
-.refresh img {
+    margin: 200px 0 40px 100px;
     width: 77px;
     height: 71px;
-    /* margin: 234px 0 70px 40px; */
-    
 }
+
 
 /* Com */
 
@@ -181,4 +178,17 @@
 
 .hidden {
     display: none;
+}
+
+.putar {
+    animation: putar 0.5s;
+}
+
+@keyframes putar {
+    0% {rotate: 0deg;}
+    20% {rotate: 72deg;}
+    40% {rotate: 144deg;}
+    60% {rotate: 216deg;}
+    80% {rotate: 288deg;}
+    100% {rotate: 360%;}
 }

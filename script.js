@@ -2,8 +2,10 @@
 const pBatu = document.querySelector('.batu');
 const pilihan = document.querySelectorAll('.player li img');
 const hasil = document.querySelector('.hasil');
-const vs = document.querySelector('.vs');
 const active = document.querySelectorAll('.com li img');
+const refresh = document.querySelector('.refresh');
+const vs = document.querySelector('.vs');
+const result = document.querySelector('.result');
 
 
 // Making Play Rules
@@ -34,12 +36,15 @@ pilihan.forEach((pil) => {
         setTimeout(function() {
             pil.classList.remove('active-player');
         },2000);
+        refresh.classList.add('putar');
+        setTimeout(() =>{
+            refresh.classList.remove('putar');
+        }, 500);
         const hasilAkhir = getHasil(pilPlayer, pilCom);
     
         console.log('p:' + pilPlayer);
         console.log('c: ' + pilCom);
-    
-        
+ 
         active.forEach((e) => {
             if(e.className == pilCom) {
                 e.classList.add('active-player');
@@ -49,6 +54,14 @@ pilihan.forEach((pil) => {
             }
     
         });
+
+        result.innerHTML = hasilAkhir;
+
+        setTimeout(() => {
+            vs.classList.add('hidden');
+            result.classList.remove('hidden');
+            refresh.classList.add('hidden');
+        },2500);
 
     
         

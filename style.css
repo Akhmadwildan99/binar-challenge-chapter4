@@ -68,10 +68,7 @@
     display: flex;
 }
 
-.img-player {
-    
-   
-}
+
 
 #img-p-batu {
     margin: 50px auto;
@@ -104,8 +101,25 @@
     color: #BD0000;
 }
 
+.result {
+    /* margin-top: 327px; */
+    width: 271.11px;
+    height: 166.93px;
+    background: #4C9654;
+    border-radius: 10px;
+    transform: rotate(-28.87deg);
+    position: absolute;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .refresh {
-    margin: 234px 0 70px 130px;
+    margin: 250px 0 70px 130px;
 }
 
 .refresh img {
@@ -163,4 +177,8 @@
     height: 300px;
     background: #C4C4C4;
     border-radius: 30px;
+}
+
+.hidden {
+    display: none;
 }

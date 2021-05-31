@@ -69,22 +69,24 @@
 }
 
 .img-player {
-    margin: 50px auto;
+    
    
 }
 
-.img-player.batu {
-    
+#img-p-batu {
+    margin: 50px auto;
     width: 128px;
     height: 92px;
 }
 
-.img-player.kertas {
+#img-p-kertas {
+    margin: 50px auto;
     width: 115px;
     height: 150px;
 }
 
-.img-player.gunting {
+#img-p-gunting{
+    margin: 50px auto;
     width: 134px;
     height: 160px;
 }
@@ -136,17 +138,20 @@
    
 }
 
-.img-com.batu {
+#img-com-batu {
+    margin: 50px auto;
     width: 128px;
     height: 92px;
 }
 
-.img-com.kertas {
+#img-com-kertas {
+    margin: 50px auto;
     width: 115px;
     height: 150px;
 }
 
-.img-com.gunting {
+#img-com-gunting {
+    margin: 50px auto;
     width: 134px;
     height: 160px;
 }

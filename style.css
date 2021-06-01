@@ -66,6 +66,7 @@
 .player li {
     list-style-type: none;
     display: flex;
+    background: url(assets/batu.png);
 }
 
 
@@ -74,18 +75,21 @@
     margin: 50px auto;
     width: 128px;
     height: 92px;
+    cursor: pointer;
 }
 
 #img-p-kertas {
     margin: 50px auto;
     width: 115px;
     height: 150px;
+    cursor: pointer;
 }
 
 #img-p-gunting{
     margin: 50px auto;
     width: 134px;
     height: 160px;
+    cursor: pointer;
 }
 
 /* VS & Result */
@@ -102,13 +106,14 @@
 }
 
 .result {
+    display: flex;
+    justify-content: center;
     margin-top: 327px;
     width: 271.11px;
     height: 166.93px;
     background: #4C9654;
     border-radius: 10px;
     transform: rotate(-28.87deg);
-    position: absolute;
     font-weight: bold;
     font-size: 38px;
     line-height: 52px;
@@ -120,7 +125,8 @@
 }
 
 .refresh {
-    margin: 200px 0 40px 100px;
+    margin-top: 250px;
+    margin-left: 120px;
     width: 77px;
     height: 71px;
 }
@@ -153,18 +159,21 @@
     margin: 50px auto;
     width: 128px;
     height: 92px;
+    cursor: pointer;
 }
 
 #img-com-kertas {
     margin: 50px auto;
     width: 115px;
     height: 150px;
+    cursor: pointer;
 }
 
 #img-com-gunting {
     margin: 50px auto;
     width: 134px;
     height: 160px;
+    cursor: pointer;
 }
 
 /* class mainppulation */
@@ -191,4 +200,47 @@
     60% {rotate: 216deg;}
     80% {rotate: 288deg;}
     100% {rotate: 360%;}
+}
+
+
+/* responsive */
+
+@media (max-width: 992px) {
+    .result {
+        width: 200px;
+    }
+
+    .refresh {
+        margin-left: 70px;
+    }
+        
+}
+
+@media (max-width: 768px) {
+    .refresh {
+        display: none;
+    }
+
+
+    .vs {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50px;
+        height: 50px;
+    }
+
+    .result {
+        margin-top: 50px;
+        margin-bottom: 130px;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+   
+    
 }

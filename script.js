@@ -27,6 +27,12 @@ function getHasil(player, com) {
 
 // console.log(getHasil('batu', getPilihanCom()));
 
+function boxHasil() {
+    if(hasil == 'draw') {
+        result.style.backgroundColor = '#035B0C';
+    }
+}
+
 
 pilihan.forEach((pil) => {
     pil.addEventListener('click', function() {
@@ -41,10 +47,7 @@ pilihan.forEach((pil) => {
             refresh.classList.remove('putar');
         }, 500);
         const hasilAkhir = getHasil(pilPlayer, pilCom);
-    
-        console.log('p:' + pilPlayer);
-        console.log('c: ' + pilCom);
- 
+
         active.forEach((e) => {
             if(e.className == pilCom) {
                 e.classList.add('active-player');
@@ -52,17 +55,16 @@ pilihan.forEach((pil) => {
                     e.classList.remove('active-player');
                 },2000);
             }
-    
         });
-
         result.innerHTML = hasilAkhir;
-
         setTimeout(() => {
             vs.classList.add('hidden');
             result.classList.remove('hidden');
-            refresh.classList.add('hidden');
+            if(hasil == 'draw') {
+                result.style.backgroundColor = '#035B0C';
+            }
         },2500);
-
+        
     
         
     }); 

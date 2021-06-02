@@ -53,6 +53,18 @@ pilihan.forEach((pil) => {
             }
         });
 
+        if(hasilAkhir == 'player 1 win') {
+            result.style.backgroundColor = '#4C9654';
+        } if (hasilAkhir == 'com win') {
+            result.style.backgroundColor = '#4C9654';
+        } else if(hasilAkhir == 'draw') {
+            result.style.backgroundColor = '#035B0C';
+        }
+
+        // if(hasilAkhir == 'draw') return result.style.backgroundColor = '#035B0C';
+        // if(hasilAkhir == 'com win') return result.style.backgroundColor = '#4C9654';
+        // if(hasilAkhir == 'player 1 win') return result.style.backgroundColor = '#4C9654';
+        
         result.innerHTML = hasilAkhir;
 
         setTimeout(() => {

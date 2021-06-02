@@ -25,27 +25,23 @@ function getHasil(player, com) {
     if(player == 'gunting') return (com == 'batu') ? 'com win':'player 1 win';
 }
 
-// console.log(getHasil('batu', getPilihanCom()));
-
-function boxHasil() {
-    if(hasil == 'draw') {
-        result.style.backgroundColor = '#035B0C';
-    }
-}
 
 
 pilihan.forEach((pil) => {
     pil.addEventListener('click', function() {
         const pilCom = getPilihanCom();
         const pilPlayer = pil.className;
+
         pil.classList.add('active-player');
         setTimeout(function() {
             pil.classList.remove('active-player');
         },2000);
+
         refresh.classList.add('putar');
         setTimeout(() =>{
             refresh.classList.remove('putar');
         }, 500);
+
         const hasilAkhir = getHasil(pilPlayer, pilCom);
 
         active.forEach((e) => {
@@ -56,7 +52,9 @@ pilihan.forEach((pil) => {
                 },2000);
             }
         });
+
         result.innerHTML = hasilAkhir;
+
         setTimeout(() => {
             vs.classList.add('hidden');
             result.classList.remove('hidden');

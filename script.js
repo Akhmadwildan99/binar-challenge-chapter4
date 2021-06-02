@@ -60,12 +60,7 @@ pilihan.forEach((pil) => {
         setTimeout(() => {
             vs.classList.add('hidden');
             result.classList.remove('hidden');
-            if(hasil == 'draw') {
-                result.style.backgroundColor = '#035B0C';
-            }
         },2500);
-        
-    
         
     }); 
 

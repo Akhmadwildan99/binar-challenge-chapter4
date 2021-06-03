@@ -126,9 +126,11 @@
 
 .refresh {
     margin-top: 250px;
+    margin-bottom: 40px;
     margin-left: 120px;
     width: 77px;
     height: 71px;
+    cursor: pointer;
 }
 
 

@@ -254,3 +254,84 @@
     }
 
 }
+
+
+@media (max-width: 510px) {
+    .header ul a li.navigasi{
+        font-size: 40px;
+        line-height: 68px;
+    
+    }
+    
+    .header ul a li.logo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .header ul a li.title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .title-player {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .title-com {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #img-p-batu {
+        width: 100px;
+        height: 92px;
+    }
+    
+    #img-p-kertas {
+        width: 95px;
+        height: 130px;
+    }
+    
+    #img-p-gunting{
+        width: 114px;
+        height: 140px;
+    }
+
+    #img-com-batu {
+        width: 100px;
+        height: 92px;
+    }
+    
+    #img-com-kertas {
+        width: 95px;
+        height: 130px;
+    }
+    
+    #img-com-gunting{
+        width: 114px;
+        height: 140px;
+    }
+
+    .vs {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .result {
+        width: 90px;
+        height: 60px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .refresh {
+        margin-left: 30px;
+        width: 50px;
+        height: 49px;
+    }
+
+    .hidden {
+        display: none;
+    }
+}

@@ -73,6 +73,11 @@ pilihan.forEach((pil) => {
 });
 
 
+refresh.addEventListener('click', function() {
+    location.reload();
+});
+
+
 
 
 

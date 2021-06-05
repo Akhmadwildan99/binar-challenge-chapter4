@@ -72,23 +72,26 @@
 
 
 #img-p-batu {
-    margin: 50px auto;
-    width: 128px;
-    height: 92px;
+    padding: 40px 30px;
+    margin: 5px auto;
+    width: 190px;
+    height: 160px;
     cursor: pointer;
 }
 
 #img-p-kertas {
-    margin: 50px auto;
-    width: 115px;
-    height: 150px;
+    margin: 5px auto;
+    padding: 40px 30px;
+    width: 180px;
+    height: 250px;
     cursor: pointer;
 }
 
 #img-p-gunting{
-    margin: 50px auto;
-    width: 134px;
-    height: 160px;
+    margin: 5px auto;
+    padding: 40px 30px;
+    width: 214px;
+    height: 220px;
     cursor: pointer;
 }
 
@@ -158,23 +161,26 @@
 }
 
 #img-com-batu {
-    margin: 50px auto;
-    width: 128px;
-    height: 92px;
+    padding: 40px 30px;
+    margin: 5px auto;
+    width: 190px;
+    height: 160px;
     cursor: pointer;
 }
 
 #img-com-kertas {
-    margin: 50px auto;
-    width: 115px;
-    height: 150px;
+    margin: 5px auto;
+    padding: 40px 30px;
+    width: 180px;
+    height: 250px;
     cursor: pointer;
 }
 
 #img-com-gunting {
-    margin: 50px auto;
-    width: 134px;
-    height: 160px;
+    margin: 5px auto;
+    padding: 40px 30px;
+    width: 214px;
+    height: 220px;
     cursor: pointer;
 }
 
@@ -220,6 +226,41 @@
 
 @media (max-width: 768px) {
 
+    #img-p-batu {
+        padding: 20px 10px;
+        width: 150px;
+        height: 120px;
+    }
+    
+    #img-p-kertas {
+        padding: 20px 10px;
+        width: 130px;
+        height: 190px;
+    }
+    #img-p-gunting{
+        padding: 20px 10px;
+        width: 174px;
+        height: 180px;
+    }
+
+    #img-com-batu {
+        padding: 20px 10px;
+        width: 150px;
+        height: 120px;
+    }
+    
+    #img-com-kertas {
+        padding: 20px 10px;
+        width: 130px;
+        height: 190px;
+    }
+    
+    #img-com-gunting {
+        padding: 20px 10px;
+        width: 174px;
+        height: 180px;
+    }
+
     .title-player {
         font-size: 25px;
         line-height: 30px;
@@ -231,6 +272,7 @@
     }
     
     .vs {
+        margin-top: 270px;
         font-size: 100px;
         line-height: 120px;
     }
@@ -238,7 +280,7 @@
     .result {
         display: flex;
         justify-content: center;
-        margin-top: 327px;
+        margin-top: 300px;
         width: 120px;
         height: 80px;
         font-weight: bold;
@@ -248,7 +290,7 @@
 
     .refresh {
         margin-left: 40px;
-        margin-top: 300px;
+        margin-top: 220px;
     }
 
     .hidden {
@@ -286,41 +328,48 @@
     }
 
     #img-p-batu {
-        width: 100px;
-        height: 92px;
+        padding: 15px 5px;
+        width: 110px;
+        height: 80px;
     }
     
     #img-p-kertas {
-        width: 95px;
-        height: 130px;
+        padding: 15px 5px;
+        width: 90px;
+        height: 150px;
     }
-    
     #img-p-gunting{
-        width: 114px;
+        padding: 15px 5px;
+        width: 134px;
         height: 140px;
     }
 
     #img-com-batu {
-        width: 100px;
-        height: 92px;
+        padding: 15px 5px;
+        width: 110px;
+        height: 80px;
     }
     
     #img-com-kertas {
-        width: 95px;
-        height: 130px;
+        padding: 15px 5px;
+        width: 90px;
+        height: 150px;
     }
     
-    #img-com-gunting{
-        width: 114px;
+    #img-com-gunting {
+        padding: 15px 5px;
+        width: 134px;
         height: 140px;
     }
 
     .vs {
+        margin-top: 200px;
         font-size: 70px;
         line-height: 90px;
     }
 
     .result {
+        margin-top: 200px;
         width: 90px;
         height: 60px;
         font-size: 15px;
@@ -328,6 +377,7 @@
     }
 
     .refresh {
+        margin-top: 180px;
         margin-left: 30px;
         width: 50px;
         height: 49px;

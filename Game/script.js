@@ -1,4 +1,5 @@
 // select element
+const navigasi = document.querySelector('.navigasi');
 const pBatu = document.querySelector('.batu');
 const pilihan = document.querySelectorAll('.player li img');
 const hasil = document.querySelector('.hasil');
@@ -94,6 +95,10 @@ refresh.addEventListener('click', function() {
     setTimeout(() =>{
         location.reload(); 
     },500);
+});
+
+navigasi.addEventListener('click', function() {
+    window.open('../index.html');
 });
 
 

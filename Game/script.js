@@ -7,6 +7,7 @@ const active = document.querySelectorAll('.com li img');
 const refresh = document.querySelector('.refresh');
 const vs = document.querySelector('.vs');
 const result = document.querySelector('.result');
+const scoreP1 = document.querySelector('.score_P1');
 
 
 // Making Play Rules
@@ -40,6 +41,7 @@ class Game{
 }
 
 const play = new Game('batu', 'kertas', 'gunting', 'player 1 win', 'com win', 'draw');
+let currentScore = 0;
 
 pilihan.forEach((pil) => {
     pil.addEventListener('click', function() {
@@ -69,8 +71,14 @@ pilihan.forEach((pil) => {
 
         if(hasilAkhir == 'player 1 win') {
             result.style.backgroundColor = '#4C9654';
+            currentScore += 1;
+            console.log(currentScore);
+            scoreP1.textContent = currentScore;
         } if (hasilAkhir == 'com win') {
             result.style.backgroundColor = '#4C9654';
+            currentScore -= 1;
+            console.log(currentScore);
+            scoreP1.textContent = currentScore;
         } else if(hasilAkhir == 'draw') {
             result.style.backgroundColor = '#035B0C';
         }
@@ -80,7 +88,7 @@ pilihan.forEach((pil) => {
         setTimeout(() => {
             vs.classList.add('hidden');
             result.classList.remove('hidden');
-        },2500);
+        },1500);
         
     }); 
 

@@ -8,6 +8,7 @@ const refresh = document.querySelector('.refresh');
 const vs = document.querySelector('.vs');
 const result = document.querySelector('.result');
 const scoreP1 = document.querySelector('.score_P1');
+const timer = document.querySelector('.time');
 
 
 // Making Play Rules
@@ -41,6 +42,48 @@ class Game{
 }
 
 const play = new Game('batu', 'kertas', 'gunting', 'player 1 win', 'com win', 'draw');
+
+// set timer function
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
+let displayHours = 0;
+let displayMinutes = 0;
+let displaySeconds = 0;
+
+function timerGame(){
+    seconds += 1;
+
+    if(seconds / 60 == 1) {
+        seconds = 0;
+        minutes += 1;
+        if(minutes / 60 == 1) {
+            minutes = 0;
+            hours += 1;
+        }
+    };
+
+    if(seconds < 10) {
+        displaySeconds = "0" + seconds.toString();
+    } else {
+        displaySeconds = seconds;
+    };
+
+    if(minutes < 10) {
+        displayMinutes = "0" + minutes.toString();
+    } else {
+        displayMinutes = minutes;
+    };
+
+    if(hours < 10) {
+        displayHours = "0" + hours.toString();
+    } else {
+        displayHours = hours;
+    };
+
+    timer.innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
+};
+
 let currentScore = 0;
 
 pilihan.forEach((pil) => {
@@ -72,12 +115,10 @@ pilihan.forEach((pil) => {
         if(hasilAkhir == 'player 1 win') {
             result.style.backgroundColor = '#4C9654';
             currentScore += 1;
-            console.log(currentScore);
             scoreP1.textContent = currentScore;
         } if (hasilAkhir == 'com win') {
             result.style.backgroundColor = '#4C9654';
             currentScore -= 1;
-            console.log(currentScore);
             scoreP1.textContent = currentScore;
         } else if(hasilAkhir == 'draw') {
             result.style.backgroundColor = '#035B0C';
@@ -95,6 +136,10 @@ pilihan.forEach((pil) => {
 });
 
 
+window.setInterval(() => {
+    timerGame();
+}, 1000);
+
 refresh.addEventListener('click', function() {
     refresh.classList.add('putar');
         setTimeout(() =>{
@@ -105,9 +150,6 @@ refresh.addEventListener('click', function() {
     },500);
 });
 
-navigasi.addEventListener('click', function() {
-    window.open('../index.html');
-});
 
 
 
